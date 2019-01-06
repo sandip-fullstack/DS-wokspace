@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="CSS/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+    
+     <div  class="fixed-action-btn vertical" style="bottom: 45px; right: 80px;">
+      <a id="plus" class="btn-floating btn-large waves-effect waves-light red" onclick="click()"><i class="material-icons">add</i></a>
+    <ul>
+    <li><a class="btn-floating blue" href="http://www.google.com" title="Descr"><i class="material-icons" >description</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">volume_up</i></a></li>	
+      <li><a class="btn-floating green"><i class="material-icons">airplay</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">perm_media</i></a></li>
+      <li><a class="btn-floating red"><i class="material-icons">videocam</i></a></li>	
+    </ul>
+  </div>
+        
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="CSS/materialize.min.js"></script>
+      <script type="text/javascript">
+      	function click(){
+      		$("#plus").click()
+      	}
+      </script>
+    </body>
+  </html>

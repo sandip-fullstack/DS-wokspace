@@ -1,0 +1,62 @@
+function numToText(num){
+    var words = new Array();
+        words[0] = '';
+        words[1] = 'One';
+        words[2] = 'Two';
+        words[3] = 'Three';
+        words[4] = 'Four';
+        words[5] = 'Five';
+        words[6] = 'Six';
+        words[7] = 'Seven';
+        words[8] = 'Eight';
+        words[9] = 'Nine';
+        words[10] = 'Ten';
+        words[11] = 'Eleven';
+        words[12] = 'Twelve';
+        words[13] = 'Thirteen';
+        words[14] = 'Fourteen';
+        words[15] = 'Fifteen';
+        words[16] = 'Sixteen';
+        words[17] = 'Seventeen';
+        words[18] = 'Eighteen';
+        words[19] = 'Nineteen';
+        words[20] = 'Twenty';
+        words[30] = 'Thirty';
+        words[40] = 'Forty';
+        words[50] = 'Fifty';
+        words[60] = 'Sixty';
+        words[70] = 'Seventy';
+        words[80] = 'Eighty';
+        words[90] = 'Ninety';
+    var arr1 = num.split('');
+    var newArray = [...arr1];
+    var wordsString = '';
+
+    for(var i=0;i<9-(arr1.length);i++){
+        newArray.unshift(0);
+    }
+    for (var i = 0, j = 1; i < 9; i++, j++) {
+        if (i == 0 || i == 2 || i == 4 || i == 7) {
+            if (newArray[i] == 1) {
+                newArray[j] = 10 + parseInt(newArray[j]);
+                newArray[i] = 0;
+            }
+        }
+    }
+    var value = '';
+    for(var i=0;i<9;i++){
+        if(i==0 || i==2 || i==4 || i==7){
+            value=newArray[i]*10;
+        }else value = newArray[i];
+    if(value!=0){
+        wordsString+=words[value] + ' ';
+    }
+    
+    if(i==6 && value!=0) wordsString+='Hundred ';
+    if((i==5 && value!=0) || (i==4 && value!=0&& newArray[5]==0)) wordsString+='Thousand ';
+    if((i==3 && value!=0) || (i==2 && value!=0 && newArray[3]==0)) wordsString+='Lacs ';
+    if(i==1 && value!=0) wordsString+='Crores ';
+    
+    }
+    return wordsString.split(' ').join(' ');
+    }

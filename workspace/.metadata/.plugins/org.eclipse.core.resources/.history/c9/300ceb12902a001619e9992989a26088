@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Divisor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		int product = 1;
+		for(int i=0;i<N;i++)
+			product*=sc.nextInt();
+		System.out.println(divisor(product));
+	}
+
+			 private static int divisor(int x) {
+		    int limit = x;
+		    int numberOfDivisors = 0;
+
+		    if (x == 1) return 1;
+
+		    for (int i = 1; i < Math.sqrt(limit); ++i) {
+		        if (x % i == 0) {
+		            limit = x / i;
+		            if (limit != i) {
+		                numberOfDivisors++;
+		            }
+		            numberOfDivisors++;
+		        }
+		    }
+
+		    return numberOfDivisors;
+		}
+	}
+
+

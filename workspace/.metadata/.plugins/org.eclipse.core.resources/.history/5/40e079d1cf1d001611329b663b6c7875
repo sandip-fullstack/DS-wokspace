@@ -1,0 +1,16 @@
+
+<html>
+
+<head>
+<style>
+.aa {
+transform:rotate(90deg);
+}
+</style>
+</head>
+
+<body>
+	<hr class="aa"></hr>
+</body>
+
+</html>

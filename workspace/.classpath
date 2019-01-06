@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ConsecutiveCheck/src"/>
+	<classpathentry kind="src" path="HackerEarth/src"/>
+	<classpathentry kind="src" path="LinkedList/src"/>
+	<classpathentry kind="src" path="Practice/src"/>
+	<classpathentry kind="src" path="Serialize/src"/>
+	<classpathentry kind="src" path="Testing/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="Testing/build/classes"/>
+</classpath>

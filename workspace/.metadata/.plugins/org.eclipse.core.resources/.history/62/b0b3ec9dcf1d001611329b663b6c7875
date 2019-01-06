@@ -1,0 +1,110 @@
+
+<html>
+
+<head>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<style>
+.panel-heading [data-toggle="collapse"]:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e072";
+	float: right;
+	color: black;
+	font-size: 18px;
+	line-height: 22px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+</style>
+</head>
+
+<body>
+	<div id="accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne"
+				style="background: white">
+				<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" href="#collapseOne"
+						aria-expanded="false" aria-controls="collapseOne"> Collapsible
+						Group Item #1 </a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+				aria-labelledby="headingOne">
+				<div class="list-group">
+					<button type="button" class="list-group-item">Cras justo
+						odio</button>
+					<button type="button" class="list-group-item">Dapibus ac
+						facilisis in</button>
+					<button type="button" class="list-group-item">Morbi leo
+						risus</button>
+					<button type="button" class="list-group-item">Porta ac
+						consectetur ac</button>
+					<button type="button" class="list-group-item">Vestibulum
+						at eros</button>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" href="#collapseTwo"
+						aria-expanded="false" aria-controls="collapseTwo"> Collapsible
+						Group Item #2 </a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+				aria-labelledby="headingTwo">Anim pariatur cliche
+				reprehenderit, enim eiusmod high life accusamus terry richardson ad
+				squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+				brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+				moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+				nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+				beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+				vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+				farm-to-table, raw denim aesthetic synth nesciunt you probably
+				haven't heard of them accusamus labore sustainable VHS.</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" data-toggle="collapse" href="#collapseThree"
+						aria-expanded="false" aria-controls="collapseThree">
+						Collapsible Group Item #3 </a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse"
+				role="tabpanel" aria-labelledby="headingThree">Anim pariatur
+				cliche reprehenderit, enim eiusmod high life accusamus terry
+				richardson ad squid. 3 wolf moon officia aute, non cupidatat
+				skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+				single-origin coffee nulla assumenda shoreditch et. Nihil anim
+				keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+				sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+				occaecat craft beer farm-to-table, raw denim aesthetic synth
+				nesciunt you probably haven't heard of them accusamus labore
+				sustainable VHS.</div>
+		</div>
+	</div>
+</body>
+
+</html>

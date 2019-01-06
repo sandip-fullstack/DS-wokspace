@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script src="https://unpkg.com/prop-types@15.6.0/prop-types.js"></script>
+<script type="text/babel">
+ class App extends React.Component {
+  static proptypes = {}; // Mention proptypes here
+    state = {count : 0};
+    handleClick = () => {
+    console.log(this.buttonNode)
+      this.setState((prevState) => ({
+        count: prevState.count + 1
+    }));
+    }
+    render(){
+      const {count} = this.state;
+    return(<div>
+          <button onClick={this.handleClick} ref ={node => (this.buttonNode =         node)}/>
+            {count}
+            </div>
+            )
+    }
+}
+// const element = <div className="container">Hello worssdsdld</div>
+ReactDOM.render(<App />, document.getElementById('root'));
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+function findIndex(id, currentNode){
+ var currentChild,result;
+if(id == currentNode.id) return currentNode;
+	for(var i=0;i<currentNode.value.length;i++){
+       currentChild = currentNode.value[i];
+		myArr.push({"key":currentChild, "value": i});
+ result = findIndex(id, currentChild);
+
+            // Return the result if the node has been found
+            if (result !== false) {
+                return myArr[myArr.length -2];
+            }
+	}
+
+return false;
+}

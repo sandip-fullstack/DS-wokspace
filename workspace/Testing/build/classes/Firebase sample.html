@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<button onclick="getScore()">Get all score</button>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+function getScore(){
+	ref.on('value', gotdata, errdata);
+}
+function gotdata(data){
+  var scores = data.val();
+  var keys = Object.keys(scores);
+  console.log(keys);
+  for(var i=0;i<keys.length;i++){
+  var name = scores[keys[i]].name;
+  var score = scores[keys[i]].score;
+  console.log(name, score);
+  }
+}
+function errdata(err){
+console.log(err);
+}
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDo4ruLJMhB8IV9Idx2jQtuUypxGTDRF5I",
+    authDomain: "my-sample-firebse.firebaseapp.com",
+    databaseURL: "https://my-sample-firebse.firebaseio.com",
+    projectId: "my-sample-firebse",
+    storageBucket: "",
+    messagingSenderId: "98582385306"
+  };
+  firebase.initializeApp(config);
+  console.log(firebase);
+  var database = firebase.database();
+  var ref = database.ref('scores');
+  var data = {
+		name: "ritwika",
+		score: 100
+	}
+   // ref.push(data);
+
+</script>
+
+
+</body>
+</html>

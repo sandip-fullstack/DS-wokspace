@@ -1,0 +1,2 @@
+<a class="button" href="#" title="My notification" content="Notification example" color="success" autoclose="3000" zf-notify="main-notifications">Dynamic Notification</a>
+<zf-notification-set id="main-notifications" position="top-left"></zf-notification-set>

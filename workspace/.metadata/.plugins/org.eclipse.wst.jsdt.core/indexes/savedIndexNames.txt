@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+/Users/pals/Documents/workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3534529733.index
+3591960740.index
+1845874902.index
+1798239646.index
+949142902.index
+1366439066.index
+4283831159.index
+3532120138.index

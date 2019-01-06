@@ -1,0 +1,7 @@
+127.0.0.1 - - [07/Jan/2016:14:10:18 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:14:10:19 +0530] "GET /Testing/divOverlay.html HTTP/1.1" 200 3359
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:14:10:19 +0530] "GET /Testing/img_dot_white.jpg HTTP/1.1" 404 1044
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:14:10:44 +0530] "GET /Testing/divOverlay.html HTTP/1.1" 200 3358
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:14:10:44 +0530] "GET /Testing/img_dot_white.jpg HTTP/1.1" 404 1044
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:14:11:00 +0530] "GET /Testing/divOverlay.html HTTP/1.1" 200 3332
+0:0:0:0:0:0:0:1 - - [07/Jan/2016:14:11:00 +0530] "GET /Testing/img_dot_white.jpg HTTP/1.1" 404 1044

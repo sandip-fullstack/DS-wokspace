@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [11/Feb/2016:13:54:31 +0530] "GET /Demo/combodate.html HTTP/1.1" 200 728
+0:0:0:0:0:0:0:1 - - [11/Feb/2016:13:54:31 +0530] "GET /Demo/CSS/combodate.js HTTP/1.1" 200 17669
+0:0:0:0:0:0:0:1 - - [11/Feb/2016:13:54:45 +0530] "GET /Demo/combodate.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2016:13:54:45 +0530] "GET /Demo/CSS/combodate.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Feb/2016:13:54:45 +0530] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [11/Feb/2016:14:15:32 +0530] "GET /Demo/combodate.html HTTP/1.1" 200 651

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Case</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script
+	src="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+<link rel="stylesheet" type="text/css" href="myStyle.css">
+
+</head>
+
+<body>
+here
+<script>
+	var validNavigation = 0;
+ 
+function endSession() 
+{
+   // Browser or Broswer tab is closed
+   // Write code here
+   alert('Browser or Broswer tab closed');
+}
+ 
+function bindDOMEvents() {
+/*
+ 
+* unload works on both closing tab and on refreshing tab.
+ 
+*/
+$(window).unload(function() 
+{
+   if (validNavigation===0) 
+   {
+     endSession();
+   }
+})
+}
+</script>
+</body>
+</html>

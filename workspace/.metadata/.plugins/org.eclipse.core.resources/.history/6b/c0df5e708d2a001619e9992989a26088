@@ -1,0 +1,38 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class Divisor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		 BigInteger result = BigInteger.ONE;
+		for(int i=0;i<N;i++)
+			result = result.multiply(BigInteger.valueOf(sc.nextInt()));
+		System.out.println(result);
+		System.out.println(divisor(result));
+	}
+
+			 private static int divisor(BigInteger x) {
+		    BigInteger limit = x;
+		    int numberOfDivisors = 0;
+
+		    if ((x)==BigInteger.valueOf(1)) return 1;
+
+		    for (BigInteger i = BigInteger.valueOf(1); i.compareTo(limit)<0; i = i.add(BigInteger.ONE)) {
+		    	System.out.println(i)
+		        if (x.mod(i).equals(0)) {
+		            limit = x.divide(i);
+		            if (limit != i) {
+		                numberOfDivisors++;
+		            }
+		            numberOfDivisors++;
+		        }
+		    }
+
+		    return numberOfDivisors;
+		}
+	}
+
+
